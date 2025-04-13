@@ -2,80 +2,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SPA HotSprings</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA HotSprings</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Logo SPA" class="logo" />
-    <button id="faq-toggle">FAQ</button>
-  </header>
-
-  <section class="hero">
-    <h1>SPA HotSprings</h1>
-    <p>Equilíbrio, bem-estar e renovação</p>
-    <div class="balloon-buttons">
-      <a href="#agendamento" class="balloon">Agendamento</a>
-      <a href="#menu" class="balloon">Menu</a>
-    </div>
-  </section>
-
-  <section id="agendamento" class="section">
-    <h2>Agende seu atendimento</h2>
-    <form id="booking-form">
-      <input type="text" placeholder="Nome" required />
-      <input type="text" placeholder="Serviço desejado" list="servicos" required />
-      <datalist id="servicos">
-        <option value="Massagem express - R$75" />
-        <option value="Escalda pés - R$50" />
-        <option value="Day spa a dois - R$350" />
-      </datalist>
-      <input type="text" placeholder="Data e horário desejado" required />
-      <textarea placeholder="Mensagem opcional..."></textarea>
-      <button type="submit">Enviar para WhatsApp</button>
-    </form>
-  </section>
-
-  <section id="menu" class="section">
-    <h2>Menu de Serviços</h2>
-    <ul>
-      <li>Massagem express - 15min R$75,00</li>
-      <li>Escalda pés - 15min R$50,00</li>
-      <li>Day Spa a dois - 1h R$350,00</li>
-    </ul>
-  </section>
-
-  <section class="quote">"Seu momento de paz começa aqui."</section>
-
-  <section class="depoimentos section">
-    <h2>Depoimentos</h2>
-    <blockquote>"Atendimento maravilhoso! Me senti renovada."</blockquote>
-    <blockquote>"Melhor spa que já fui, super recomendo!"</blockquote>
-  </section>
-
-  <section class="cartoes section">
-    <h2>Cartões-presente</h2>
-    <p>Presenteie alguém especial com um momento de cuidado e bem-estar.</p>
-  </section>
-
-  <section class="galeria section">
-    <h2>Galeria de Fotos</h2>
-    <img src="foto1.jpg" alt="Ambiente" />
-    <img src="foto2.jpg" alt="Serviço" />
-  </section>
-
-  <div id="faq" class="faq-popup hidden">
-    <h3>Perguntas Frequentes</h3>
-    <p><strong>É possível pagar antes?</strong><br>Sim, você pode efetuar o pagamento antes ou depois diretamente no WhatsApp.</p>
-    <p><strong>O atendimento é para casais?</strong><br>Sim, temos opções para casal como o Day Spa a dois.</p>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 SPA HotSprings</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <header>
+        <img src="logo.png" alt="Logo SPA HotSprings" class="logo">
+        <nav>
+            <button onclick="window.location.href='menu.html'">Menu</button>
+            <button onclick="window.location.href='agendamento.html'">Agendamento</button>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Bem-vindo ao SPA HotSprings</h1>
+            <p>Equilíbrio, Bem-estar e Renovação</p>
+        </section>
+        <section class="frase">
+            <blockquote>“Cuidar de si mesmo é um ato de amor.”</blockquote>
+        </section>
+    </main>
+    <footer>
+        <p>@massoterapeuta_kely | Rua Francisca Ala Cunha, Bairro do Turista, Caldas Novas - GO</p>
+        <p><a href="https://www.instagram.com/massoterapeuta_kely" target="_blank">Instagram</a></p>
+    </footer>
 </body>
 </html>
